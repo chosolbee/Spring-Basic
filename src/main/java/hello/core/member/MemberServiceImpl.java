@@ -8,6 +8,7 @@ public class MemberServiceImpl implements MemberService{
 
     //어떤 memberRepository가 들어올지 아직 모름 -> AppConfig에서 정하겠다
     public MemberServiceImpl(MemberRepository memberRepository) {
+
         this.memberRepository = memberRepository;
     }
 
@@ -20,5 +21,10 @@ public class MemberServiceImpl implements MemberService{
     @Override
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
+    }
+
+    // 테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }
