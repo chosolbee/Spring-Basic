@@ -38,4 +38,5 @@ public class OrderServiceTest {
         // VIP의 경우 1000원 할인해주기로 했으므로 동일함 -> test 통과
         Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
+
 }
