@@ -49,6 +49,7 @@ public class AllBeanTest {
             // discountCode = fixDiscountPolicy가 위에서 매개변수로 들어옴
             DiscountPolicy discountPolicy = policyMap.get(discountCode);
             return discountPolicy.discount(member, price);
+
         }
     }
 }
